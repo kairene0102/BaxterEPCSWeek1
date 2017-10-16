@@ -1,8 +1,7 @@
 def main():
   students = [
-    Student("Larsson", "HAL", 37),
-    Student("BonJovi", "JOHN", 55),
-    Student("Juan", "ENRIQUE", 7),
+    Student("Larsson", 37),
+    Student("BonJovi", 55),
   ]
 
   printHeader()
@@ -21,7 +20,7 @@ class Student:
   def __init__(self, lastName, age):
     self.lastName = lastName
     self.age = age
-    self.firstName = firstName
+    self.firstName = "JOHN"
 
   def assignRandomName(self):
     pass
@@ -35,7 +34,7 @@ class Student:
   def assignRandomHeight(self, isMetric):
     pass
 
-inputQuestions = [
+inputQuestions = [ 
   "For STUDENTS BY AGE, type 0",
   "For STUDENTS BY LAST NAME, type 1",
   "For STUDENTS BY FIRST NAME, type 3",
